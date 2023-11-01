@@ -1,4 +1,5 @@
 import React from 'react'
+import './Header.css'
 
 const Header = ({productItems,productItemsfilter,setProductItemsfilter}) => {
     
@@ -23,10 +24,9 @@ const Header = ({productItems,productItemsfilter,setProductItemsfilter}) => {
     }
   return (
     <div>
-      <div>
-        DevTown
-      </div>
-      <div>
+      <div class="header">DevTown</div>
+      <div class="func">
+      <div class="filter">
         <label htmlFor='select_cat'>Choose category</label>
         <select id="select_cat" onChange={()=>handleFilter()}>
             <option value="none" selected>None</option>
@@ -35,8 +35,9 @@ const Header = ({productItems,productItemsfilter,setProductItemsfilter}) => {
             <option value="kids">Kids</option>
         </select>
       </div>
-      <div>
-        <button onClick={() => handleSort()}>Sort</button>
+      <div class="sort">
+        <button class="sort-btn" onClick={() => handleSort()}>Sort</button>
+      </div>
       </div>
     </div>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import './Pagination.css'
 
 const Pagination = ({prodPerpage,totalProducts,setCurrentpage}) => {
     const pageNumbers = [];
@@ -8,10 +9,10 @@ const Pagination = ({prodPerpage,totalProducts,setCurrentpage}) => {
     }
 
   return (
-    <div>
+    <div class="pagination">
       {pageNumbers.map((numbers) => {
         return(
-            <button onClick={() => setCurrentpage(numbers)}>{numbers}</button>
+            <button class="page-btn" onClick={() => setCurrentpage(numbers)}>{numbers}</button>
         )
       })}
     </div>
