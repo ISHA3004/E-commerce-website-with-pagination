@@ -1,0 +1,39 @@
+.card{
+    border:1.5px solid rgb(117, 117, 117);
+    border-radius: 8px;
+    width: 20rem;
+    box-shadow: 2px 2px 40px 0.5px rgb(198, 194, 194),-2px -2px 20px 0.5px rgb(159, 154, 154);
+    margin: 20px 50px;
+    padding:5px 5px;
+    display:inline-block;
+}
+img{
+    /* max-width:18rem;  */
+    width: 100%;
+    height:200px;
+}
+
+.prodinfo{
+    margin:0px 0px;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 19px;
+}
+
+.carddetails{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+.atcbtn button{
+    background-color: blueviolet;
+    color:beige;
+    border-radius: 6px;
+    padding:10px 10px;
+    font-size:14px;
+    margin-right:2px;
+}
+
+.atcbtn button:hover{
+    background-color: rgb(185, 170, 196);
+    color:rgb(13, 3, 23);
+}
