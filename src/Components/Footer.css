@@ -1,0 +1,25 @@
+.entfooter{
+    background-color: rgb(58, 12, 101);
+    color:beige;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.fheader{
+    margin:10px 10px;
+    padding: 10px 10px;
+    background-color: rgb(58, 12, 101);
+}
+
+.footheader{
+    font-weight: bold;
+    line-height:35px;
+}
+
+@media only screen and (max-width: 600px) {
+    .entfooter{
+        flex-direction:column;
+    }
+  }

@@ -18,7 +18,7 @@ const Header = ({productItems,productItemsfilter,setProductItemsfilter}) => {
     }
 
     const handleSort = () => {
-        let prodSorted = productItemsfilter.sort((a, b) => Number(b.cost) - Number(a.cost));
+        let prodSorted = productItemsfilter.sort((a, b) => Number(b.price) - Number(a.price));
         console.log(prodSorted);
         setProductItemsfilter(prodSorted);
     }
@@ -30,9 +30,10 @@ const Header = ({productItems,productItemsfilter,setProductItemsfilter}) => {
         <label htmlFor='select_cat'>Choose category</label>
         <select id="select_cat" onChange={()=>handleFilter()}>
             <option value="none" selected>None</option>
-            <option value="mens">Mens</option>
-            <option value="womens">Women</option>
-            <option value="kids">Kids</option>
+            <option value="men's clothing">Mens clothing</option>
+            <option value="jewelery">Jewelery</option>
+            <option value="electronics">Electronics</option>
+            <option value="women's clothing">Women's clothing</option>
         </select>
       </div>
       <div class="sort">
